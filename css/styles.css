@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+footer {
+  width: 100%;
+  background-color: orange;
+  border: 0.2vw solid black;
+  padding: 0.8vw;
+  height: 10vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5vw;
+  color: black;
+  text-align: center;
+  margin: 27vh;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+  text-shadow: white 0 -0.25vw;
+
+}
+
+h2 {
+  font-size: 2vw;
+}
+
+.titol {
+  width: 100%;
+  text-align: center;
+  height: 10vh;
+}
+
+header {
+  background-image: url(../img/header.webp);
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  border: 0.2vw solid black;
+  padding: 0.8vw;
+
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: red;
+  width: 100%;
+  border: 0.2vw solid black;
+  padding: 0.8vw;
+  height: auto;
+}
+
+article {
+  flex: 3;
+  background-color: white;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article li {
+
+  height: 5vh;
+}
+
+.column {
+  width: 32%;
+  height: auto;
+  margin: 0.8vh;
+  margin-top: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+img {
+  width: 100%;
+  border-radius: 25%;
+  margin: 0.5vh;
+}
+
+p {
+  margin: 0;
+  font-size: 1.2vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  flex: 1;
+  background-color: red;
+  height: 9vh;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 35vh;
+  background-color: yellow;
+  border: 0.25vw solid #555;
+}
+
+nav li a {
+  display: block;
+  color: #000;
+  padding: 0.5vw 1vw;
+  text-decoration: none;
+}
+
+nav li {
+  text-align: center;
+  border-bottom: 0.25vw solid #555;
+  background-color: yellow;
+  font-size: 1.2vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav li:last-child {
+  border-bottom: none;
+}
+
+nav li a.active {
+  background-color: black;
+  color: white;
+}
+
+nav li a:hover:not(.active) {
+  background-color: red;
+  color: white;
+}
+
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  box-shadow: 1vw 1vw 1vw black;
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  width: 70%;
+  height: auto;
+}
+
+td {
+  width: 50%;
+  height: auto;
+  border: 2px solid black;
+  padding: 7px;
+}
+
+.flex-container {
+  text-align: center;
+  width: 100%;
+}
+
+form {
+  margin: auto;
+  margin-top: 5vh;
+  height: auto;
+  max-width: 70%;
+  margin-bottom: 5vh;
+}
+
+
+fieldset {
+  margin: auto;
+  margin-bottom: 3vh;
+  padding: 3vh;
+  border: 0.7vh solid #ccc;
+  box-shadow: 2vh 2vh 3vh rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+legend {
+  text-align: left;
+}
+
+label {
+  margin: 2vh;
+  float: left;
+}
+
+input {
+  align-self: center;
+  width: 90%;
+  padding: 1.5vh;
+  border: 1px solid #ccc;
+}
+
+select {
+  width: 30%;
+  padding: 1.5vh;
+  border: 1px solid #ccc;
+}
+
+
+button {
+  padding: 1.5vh 2vh;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 3vh;
+
+}
+
+.btn-delete {
+  background-color: #ff0000;
+}
+
+@media only screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+
+  img {
+    width: 70%;
+  }
+
+  form {
+    max-width: 50%;
+  }
+
+}

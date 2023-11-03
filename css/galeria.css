@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    background-color: orange;
+    border: 0.2vw solid black;
+    padding: 0.8vw;
+    height: 10vh;
+    text-align: center;
+}
+
+header {
+    background-image: url(../img/header.webp);
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    border: 0.2vw solid black;
+    padding: 0.8vw;
+
+}
+
+h1 {
+    font-size: 5vw;
+    color: black;
+    text-align: center;
+    margin: 27vh;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    text-shadow: white 0 -0.25vw;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+p {
+    margin: 0;
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.titol {
+    width: 100%;
+    text-align: center;
+    height: 10vh;
+  }
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: red;
+    width: 100%;
+    border: 0.2vw solid black;
+    padding: 0.8vw;
+    height: auto;
+}
+
+article {
+    flex: 3;
+    background-color: white;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav {
+    flex: 1;
+    background-color: red;
+    height: 10vh;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 35vh;
+    background-color: yellow;
+    border: 0.25vw solid #555;
+}
+
+nav li a {
+    display: block;
+    color: #000;
+    padding: 0.5vw 1vw;
+    text-decoration: none;
+}
+
+nav li {
+    text-align: center;
+    border-bottom: 0.25vw solid #555;
+    background-color: yellow;
+    font-size: 1.2vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav li:last-child {
+    border-bottom: none;
+}
+
+nav li a.active {
+    background-color: black;
+    color: white;
+}
+
+nav li a:hover:not(.active) {
+    background-color: orange;
+    color: white;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.foto {
+    width: 24%;
+    height: 14vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 0.5vw;
+    margin-bottom: 1vw;
+    border: 0.25vw solid #ddd;
+    border-radius: 15%;
+    box-shadow: 1vw 1vw 1vw black;
+    height: auto;
+}
+
+.foto img {
+    width: 100%;
+    height: 27vh;
+    border-radius: 15%;
+}
+
+.foto:hover {
+    background-color: orange;
+    transform: scale(1.2);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .foto{
+      width: 47%;
+    }
+    
+    .foto:hover{
+        transform: scale(1.1);
+    }
+  
+  }

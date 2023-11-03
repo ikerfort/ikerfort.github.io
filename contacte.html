@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js"></script>
+    <title>Pàgina de Iker</title>
+</head>
+
+<body>
+    <header>
+        <h1>MADRID</h1>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html">INDEX</a></li>
+                <li><a href="llocs.html">LLOCS</a></li>
+                <li><a href="plats.html">PLATS</a></li>
+                <li><a href="galeria.html">GALERIA</a></li>
+                <li><a class="active" href="#">CONTACTE</a></li>
+            </ul>
+        </nav>
+        <article>
+            <div class="titol">
+                <h2>Contacte</h2>
+            </div>
+            <div class="flex-container">
+                <form id="myForm" action="contacte.html" method="post" onsubmit="return validarForm();">
+                    <fieldset>
+                        <legend>Dades del client:</legend>
+                        <label for="nom">Nom i Cognom:</label><br>
+                        <input type="text" id="nom" name="nom" placeholder="Nom i Cognom" required><br>
+                        <label for="doc">DNI:</label><br><br><br>
+                        <input type="text" id="doc" name="doc" minlength="9" maxlength="9" placeholder="87654321A"
+                            required><br><br>
+                        <label for="email">Correu electrònic:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Introdueix el correu electrònic"
+                            required><br>
+                        <label for="pass">Contraseña:</label><br>
+                        <input type="password" id="pass" name="pass"
+                            placeholder="Contrasenya de 8 caràcters o més, número, majúscula i minúscula."
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="RECORDA!! Ha de contenir almenys un número i una lletra majúscula i minúscula, i 8 caràcters o més"
+                            required><br>
+                    </fieldset>
+                    <button type="submit" class="btn">Enviar</button>
+                    <button type="reset" class="btn btn-delete">Esborrar</button>
+                </form>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <p>Website by Iker</p>
+    </footer>
+
+</body>
+
+</html>
